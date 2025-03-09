@@ -24,7 +24,7 @@ async fn main() -> std::io::Result<()> {
     welcome::welcome();
     HttpServer::new(|| {
         let cors = Cors::default()
-            .allowed_origin("https://nxtrprfrntend-production.up.railway.app/")
+            .allowed_origin("https://nxtrprfrntend.vercel.app/")
             .allow_any_origin()
             .allow_any_method()
             .allow_any_header();
